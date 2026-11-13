@@ -1,0 +1,31 @@
+{
+  "target": "/home/claude/quantum-agility-auditor/samples/demo_target",
+  "ground_truth_assets": 41,
+  "predicted_assets": 41,
+  "true_positives": 41,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "accuracy": 1.0,
+  "false_positive_rate": 0.0,
+  "scan_seconds": 0.218,
+  "files_scanned": 11,
+  "raw_findings": 55,
+  "missed": [],
+  "spurious": [],
+  "summary": {
+    "system": "Benchmark Target",
+    "total_findings": 55,
+    "cbom_entries": 55,
+    "actionable": 53,
+    "critical": 48,
+    "high": 3,
+    "medium": 2,
+    "low": 0,
+    "already_pqc": 2,
+    "hndl_exposed": true,
+    "scan_seconds": 0.218
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "holdout": {
+    "accuracy": 0.9206,
+    "precision_macro": 0.9174,
+    "recall_macro": 0.9208,
+    "f1_macro": 0.9187,
+    "f1_weighted": 0.9186,
+    "n_test": 315
+  },
+  "classification_report": {
+    "3DES_CBC": {
+      "precision": 0.9565217391304348,
+      "recall": 1.0,
+      "f1-score": 0.9777777777777777,
+      "support": 22.0
+    },
+    "AES_CBC": {
+      "precision": 0.9545454545454546,
+      "recall": 0.9545454545454546,
+      "f1-score": 0.9545454545454546,
+      "support": 22.0
+    },
+    "AES_GCM": {
+      "precision": 0.47368421052631576,
+      "recall": 0.391304347826087,
+      "f1-score": 0.42857142857142855,
+      "support": 23.0
+    },
+    "BASE64": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 22.0
+    },
+    "CHACHA20": {
+      "precision": 0.5,
+      "recall": 0.5454545454545454,
+      "f1-score": 0.5217391304347826,
+      "support": 22.0
+    },
+    "COMPRESSED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 22.0
+    },
+    "ECDSA_SIGNATURE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 22.0
+    },
+    "EC_KEY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 23.0
+    },
+    "MD5_DIGEST": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 23.0
+    },
+    "PLAINTEXT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 23.0
+    },
+    "RSA_CIPHERTEXT": {
+      "precision": 0.9583333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9787234042553191,
+      "support": 23.0
+    },
+    "RSA_KEY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 22.0
+    },
+    "SHA1_DIGEST": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 23.0
+    },
+    "SHA256_DIGEST": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 23.0
+    },
+    "accuracy": 0.9206349206349206,
+    "macro avg": {
+      "precision": 0.9173631955382529,
+      "recall": 0.920807453416149,
+      "f1-score": 0.9186683711131973,
+      "support": 315.0
+    },
+    "weighted avg": {
+      "precision": 0.9173964500623538,
+      "recall": 0.9206349206349206,
+      "f1-score": 0.9185941369387033,
+      "support": 315.0
+    }
+  },
+  "feature_importance_top15": [
+    [
+      "struct_len_log",
+      0.10324
+    ],
+    [
+      "struct_entropy",
+      0.0985
+    ],
+    [
+      "struct_compress_ratio",
+      0.09178
+    ],
+    [
+      "struct_mod16",
+      0.05253
+    ],
+    [
+      "struct_zlib_magic",
+      0.05236
+    ],
+    [
+      "struct_mod8",
+      0.0503
+    ],
+    [
+      "struct_b64_ratio",
+      0.04825
+    ],
+    [
+      "struct_is_rsa_block",
+      0.04596
+    ],
+    [
+      "struct_printable",
+      0.04443
+    ],
+    [
+      "sp_block_freq",
+      0.03301
+    ],
+    [
+      "struct_is_digest_32",
+      0.0328
+    ],
+    [
+      "struct_chi2",
+      0.03226
+    ],
+    [
+      "struct_der_len_ok",
+      0.02802
+    ],
+    [
+      "sp_serial",
+      0.02646
+    ],
+    [
+      "struct_hex_ratio",
+      0.02612
+    ]
+  ],
+  "labels": [
+    "3DES_CBC",
+    "AES_CBC",
+    "AES_GCM",
+    "BASE64",
+    "CHACHA20",
+    "COMPRESSED",
+    "ECDSA_SIGNATURE",
+    "EC_KEY",
+    "MD5_DIGEST",
+    "PLAINTEXT",
+    "RSA_CIPHERTEXT",
+    "RSA_KEY",
+    "SHA1_DIGEST",
+    "SHA256_DIGEST"
+  ],
+  "confusion_matrix": [
+    [
+      22,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      21,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      9,
+      0,
+      12,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      0,
+      12,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      22,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23
+    ]
+  ],
+  "interpretation": "Classes separated by structure - RSA keys and ECDSA signatures (ASN.1 DER framing), digests (fixed length), 3DES (8-byte block alignment), plaintext, base64 and compressed data - are classified near-perfectly. AES-GCM and ChaCha20 are confused with each other at close to chance, and this is the expected and correct result: both produce unpadded output that is indistinguishable from random by design. A randomness test that could separate them would constitute a distinguishing attack on the cipher. The SP 800-22 battery therefore answers 'is this cryptographic output', while the structural features answer 'which primitive produced it'."
+}

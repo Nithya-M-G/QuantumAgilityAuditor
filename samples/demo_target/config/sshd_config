@@ -1,0 +1,6 @@
+Port 22
+Protocol 2
+KexAlgorithms ecdh-sha2-nistp256,diffie-hellman-group14-sha1
+HostKeyAlgorithms ssh-rsa,ecdsa-sha2-nistp256
+Ciphers aes256-ctr,3des-cbc
+PermitRootLogin no
